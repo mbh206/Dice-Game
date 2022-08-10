@@ -1,0 +1,86 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: darkred; 
+    --color-5: red;
+    margin: 0;
+    padding: 0;
+}
+
+body, .container {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: url("https://i.pinimg.com/736x/7f/32/38/7f32384c93790e5b4cea472cc839ae1e.jpg");
+    background-size: cover;
+}
+
+h1, h3 {
+    padding: 0px;
+    margin: 0;
+}
+
+
+#message {
+    color: bisque;
+    padding: 10px 0;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-scores {
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 20px;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0 10px;
+    font-size: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.playerBtn:hover, #resetBtn {
+    background-color: var(--color-4);
+}
+
+.playerBtn:active, .playerBtn {
+    background-color: var(--color-5);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+    margin: 0 auto;
+}
+
+.active {
+    box-shadow: 0px 0px 2px 3px crimson;
+}
